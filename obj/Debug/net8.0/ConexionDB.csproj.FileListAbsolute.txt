@@ -1,0 +1,6 @@
+C:\Users\Acer\Documents\VS_Code UTCV\DB\ConexionDB\obj\Debug\net8.0\ConexionDB.csproj.AssemblyReference.cache
+C:\Users\Acer\Documents\VS_Code UTCV\DB\ConexionDB\obj\Debug\net8.0\ConexionDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Documents\VS_Code UTCV\DB\ConexionDB\obj\Debug\net8.0\ConexionDB.AssemblyInfoInputs.cache
+C:\Users\Acer\Documents\VS_Code UTCV\DB\ConexionDB\obj\Debug\net8.0\ConexionDB.AssemblyInfo.cs
+C:\Users\Acer\Documents\VS_Code UTCV\DB\ConexionDB\obj\Debug\net8.0\ConexionDB.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Documents\VS_Code UTCV\DB\ConexionDB\obj\Debug\net8.0\ConexionDB.sourcelink.json
