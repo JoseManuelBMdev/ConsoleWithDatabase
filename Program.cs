@@ -1,14 +1,26 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using System;
 
-public class ApplicationDbContext : DbContext
+class Program
 {
-    public DbSet<User> Users { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    static void Main(string[] args)
     {
-        var serverVersion = new MariaDbServerVersion(new Version(10, 3, 16)); // Especifica la versión de tu servidor MySQL
-        optionsBuilder.UseMySql("server=localhost;port=3306;database=shp1p;user=root;password=", 
-        new MariaDbServerVersion(serverVersion));
+        Console.WriteLine("Hola, mundo desde el método Main!");
+
+        using (var dbContext = new AplicationDbContext())
+        {
+            // Aquí puedes escribir el código para realizar operaciones CRUD en la base de datos
+
+             // Crear un nuevo usuario
+            var newUser = new User
+            {
+                name = "John",
+                last_name = "Doe",
+                email = "john.doe@example.com",
+                password = "12345678"
+            };
+            dbContext.Users.Add(newUser);
+            dbContext.SaveChanges();
+            Console.WriteLine("Usuario creado con éxito.");
+        }
     }
 }
